@@ -24,4 +24,11 @@ public class StudentGroup implements Iterable<Student> {
     public Iterator<Student> iterator() {
         return new StudentGroupIterator(this);
     }
+
+    @Override
+    public String toString() {
+        return "StudentGroup{" +
+                "studentList=" + studentList +
+                '}';
+    }
 }
