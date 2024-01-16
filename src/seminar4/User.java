@@ -5,7 +5,7 @@ public class User {
     private String lastName;
     private String secondName;
 
-    public User(String firstName, String lastName, String secondName) {
+    public User(String secondName, String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.secondName = secondName;
@@ -30,5 +30,17 @@ public class User {
                 ", lastName='" + lastName + '\'' +
                 ", secondName='" + secondName + '\'' +
                 '}';
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
     }
 }
