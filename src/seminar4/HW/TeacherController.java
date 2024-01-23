@@ -1,11 +1,9 @@
 package seminar4.HW;
 
-import seminar4.UserController;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class TeacherController implements UserController<Teacher> {
+public class TeacherController implements seminar6.presenter.TeacherController.UserController<Teacher> {
     private List<Teacher> teachersList = new ArrayList<>();
 
     public List<Teacher> getTeachersList() {

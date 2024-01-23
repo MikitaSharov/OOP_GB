@@ -1,6 +1,8 @@
 package seminar4;
 
-public class StudentController implements UserController<Student> {
+import seminar6.presenter.TeacherController;
+
+public class StudentController implements TeacherController.UserController<Student> {
 
     @Override
     public Student addUser(String secondName, String firstName, String lastName) {
